@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Flipping Animation</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="book">
+    <!-- For Next/Prev Controls -->
+    <input type="checkbox" id="c1">
+    <input type="checkbox" id="c2">
+    <input type="checkbox" id="c3">
+    <!-- Book Cover -->
+    <div id="cover">
+    </div>
+    <!-- Pages -->
+    <div class="flip-book">
+        <!-- Page 1 -->
+        <div class="flip" id="p1">
+            <div class="back">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAk1BMVEX52yz///8AAAD/4S3/5C793i3W1ta7piH/5i4iIiL12CvErSM4MQrcwifGxsYvLy/PtyX39/fu7u7f39/Q0NCgoKBJSUkoKCivr6/t0Cro6OhbW1tJQQ1UVFSWhRuQkJCtmB9jY2O5ubmgjRyLexgrJgiEdRdDOgxyZRQIBwEeGgUmIgdiVxEVEwRpXRNbUBBTSQ8onRR8AAAE2klEQVRogbWa2XqqMBCAYxZAFLdWW2zrUhVRa3ve/+lOJiCSZJCIMjftR8PvOJktk5KOo4wn8xfv9dV7mU/Gru8QF+5gup51aSHd2Xo6cPmEWri3HFJUhkvvMbi3fMPJmbzV8G/Bv2cXyind+FEcEilhHPmb9HT5y+y7Efw9t3I/6cUBZ0IIkokQjAdxL+nnO/B+N3yQW3obCX6haiIfR9vc+oO74PMP9danzxhKzvmM+Z9q4cfcHT5Vb+xHjFWTM2FstFeLp47wyRes3vWCG0qX1A96O1j/NXGBe0qTBanVutCeLNQrtlta8HflIRF3RYPwSHmO5TYmXJk7EU4WKdlGJJjhDfgS1qzuUjtXfgVvLm/BFXvUgC3pI5uuwcEmh8h5J3Vh0cG0TBkOe3mIG7IlPT4Yu1qCKx9sqnemu+GRV/hE2fsBtqQru08Q+FdDPymL8pkvGw6bmTzIlvSkvKkX+Bzi8s7QwURArM4NOOTY6Blw2NQPHT6AXPWwUUA4ZLGBBpd1Z/cMNIjMwMMyHMKn95AXXoX1ilDK4LIW74PnsAkJZG3qXuHfED5P2M1MBITSdwGX/cnnk4wCwmTVnl3gkFR8BC448pA5VG0/TzEAhyyOYUY/G+sx9/dJPT3P7ACX/eDWfkFlIfMLMUgeqzo6k93SWwb38OAMj9TeilCV7zrHUmHqKfgSzSpKR0qNh1kTEdbAVYZZKvgQTYcs66Ri6yV4WOe2kByHAB9DdCJWoTZcfV0XuIAoHUv4wNKv+LNpAeEjD1GJVfYiUCVO9g6JzOQHTUe2UQ/P9Zki2EHNIJ01pSli8gz+q3lLvp/IclN4SulawmXs27FygesunWvu16chWDnrkHEXXZ3Z/BAiD48OKQ52pzsmk4r6prxlYxggphVpyIKDX03IHHWWLIT/TAwY3alFEKDGnLxUuRbzERX5yLFNhS/+QjwrxotPx2zr3LlDdiGvlfDHRGJf24VXm+VhuFe9oY9JtqG6KzZsASy3yl2xHEQiRnKvi5pb87U8iMrhH573TeAyK2wN78/Dv5S4WErPTcwPSc7IIHniuqZc1Sk1hf/Tc/wl5RbFIji5VLAKuNEOAmtaLnOqFDRp0jkMdX40j7mUuWuB5vFi1+R4obLzv/J7RYEutRaCx/R+fwlA8T/NnkVroTVF0nzpnY26dOn+JtateW2KtHYuSO89jEpQbMzYSu2c0Yj27ztGgzZWwbo2onoLLcK7BgAcs2O5hdabf/md3McivId4gNb8G8cWGD440mUPfw5tePnYYh64oO13qsNSbySkjQOXeVQE3R18Rtr7jKQL46hoHXJFvKPJrUkrrGEJ7SNs65BrHc+FSOnp5nCRxXv6izYa5vEcGSzAXCYJq/aViUWF5ZDBAjISYfGfLCMEMY5gbHWke9SjsJEINswRQa8PA3Su8QUL4s2RHv2KsTo2zEHHUIL15M7vFyPBOQORP6KN9OLzqmKOjI+hKgZoIoi2oMvuJ9lut8kP/H5MR1XT76oBWtXoT3ASrZLs3Cgtl26iEDcIuTX6qx5ayg0MAkbCEH7c8P4bQ8t2x63tDorbHXG3O5xv91qh3QuRdq9y2r2E6rR6fdZp9+Kv0+qVJUiLl60gLV4Tg7R4wZ3z27qaz6S9fyooPqHBv0P8B8+2Ul9kgwfLAAAAAElFTkSuQmCC" alt="">
+                <label for="c1" class="back-btn">Before</label>
+            </div>
+            <div class="front">
+                <h2>Edu Accessible</h2>
+                <label for="c1" class="next-btn">NEXT</label>
+            </div>
+        </div>
+        <!-- Page 2 -->
+        <div class="flip" id="p2">
+            <div class="back">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAk1BMVEX52yz///8AAAD/4S3/5C793i3W1ta7piH/5i4iIiL12CvErSM4MQrcwifGxsYvLy/PtyX39/fu7u7f39/Q0NCgoKBJSUkoKCivr6/t0Cro6OhbW1tJQQ1UVFSWhRuQkJCtmB9jY2O5ubmgjRyLexgrJgiEdRdDOgxyZRQIBwEeGgUmIgdiVxEVEwRpXRNbUBBTSQ8onRR8AAAE2klEQVRogbWa2XqqMBCAYxZAFLdWW2zrUhVRa3ve/+lOJiCSZJCIMjftR8PvOJktk5KOo4wn8xfv9dV7mU/Gru8QF+5gup51aSHd2Xo6cPmEWri3HFJUhkvvMbi3fMPJmbzV8G/Bv2cXyind+FEcEilhHPmb9HT5y+y7Efw9t3I/6cUBZ0IIkokQjAdxL+nnO/B+N3yQW3obCX6haiIfR9vc+oO74PMP9danzxhKzvmM+Z9q4cfcHT5Vb+xHjFWTM2FstFeLp47wyRes3vWCG0qX1A96O1j/NXGBe0qTBanVutCeLNQrtlta8HflIRF3RYPwSHmO5TYmXJk7EU4WKdlGJJjhDfgS1qzuUjtXfgVvLm/BFXvUgC3pI5uuwcEmh8h5J3Vh0cG0TBkOe3mIG7IlPT4Yu1qCKx9sqnemu+GRV/hE2fsBtqQru08Q+FdDPymL8pkvGw6bmTzIlvSkvKkX+Bzi8s7QwURArM4NOOTY6Blw2NQPHT6AXPWwUUA4ZLGBBpd1Z/cMNIjMwMMyHMKn95AXXoX1ilDK4LIW74PnsAkJZG3qXuHfED5P2M1MBITSdwGX/cnnk4wCwmTVnl3gkFR8BC448pA5VG0/TzEAhyyOYUY/G+sx9/dJPT3P7ACX/eDWfkFlIfMLMUgeqzo6k93SWwb38OAMj9TeilCV7zrHUmHqKfgSzSpKR0qNh1kTEdbAVYZZKvgQTYcs66Ri6yV4WOe2kByHAB9DdCJWoTZcfV0XuIAoHUv4wNKv+LNpAeEjD1GJVfYiUCVO9g6JzOQHTUe2UQ/P9Zki2EHNIJ01pSli8gz+q3lLvp/IclN4SulawmXs27FygesunWvu16chWDnrkHEXXZ3Z/BAiD48OKQ52pzsmk4r6prxlYxggphVpyIKDX03IHHWWLIT/TAwY3alFEKDGnLxUuRbzERX5yLFNhS/+QjwrxotPx2zr3LlDdiGvlfDHRGJf24VXm+VhuFe9oY9JtqG6KzZsASy3yl2xHEQiRnKvi5pb87U8iMrhH573TeAyK2wN78/Dv5S4WErPTcwPSc7IIHniuqZc1Sk1hf/Tc/wl5RbFIji5VLAKuNEOAmtaLnOqFDRp0jkMdX40j7mUuWuB5vFi1+R4obLzv/J7RYEutRaCx/R+fwlA8T/NnkVroTVF0nzpnY26dOn+JtateW2KtHYuSO89jEpQbMzYSu2c0Yj27ztGgzZWwbo2onoLLcK7BgAcs2O5hdabf/md3McivId4gNb8G8cWGD440mUPfw5tePnYYh64oO13qsNSbySkjQOXeVQE3R18Rtr7jKQL46hoHXJFvKPJrUkrrGEJ7SNs65BrHc+FSOnp5nCRxXv6izYa5vEcGSzAXCYJq/aViUWF5ZDBAjISYfGfLCMEMY5gbHWke9SjsJEINswRQa8PA3Su8QUL4s2RHv2KsTo2zEHHUIL15M7vFyPBOQORP6KN9OLzqmKOjI+hKgZoIoi2oMvuJ9lut8kP/H5MR1XT76oBWtXoT3ASrZLs3Cgtl26iEDcIuTX6qx5ayg0MAkbCEH7c8P4bQ8t2x63tDorbHXG3O5xv91qh3QuRdq9y2r2E6rR6fdZp9+Kv0+qVJUiLl60gLV4Tg7R4wZ3z27qaz6S9fyooPqHBv0P8B8+2Ul9kgwfLAAAAAElFTkSuQmCC" alt="">
+                <label for="c2" class="back-btn">Before</label>
+            </div>
+            <div class="front">
+                <h2>Page 2</h2>
+                <label for="c2" class="next-btn">NEXT</label>
+            </div>
+        </div>
+        <!-- Page 3 -->
+        <div class="flip" id="p3">
+            <div class="back">
+                <label for="c3" class="back-btn">Before</label>
+            </div>
+            <div class="front">
+                <h2>Page 3</h2>
+                <label for="c3" class="next-btn">NEXT</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+<!--https://www.cssscript.com/3d-flip-book-animation/#google_vignette-->
