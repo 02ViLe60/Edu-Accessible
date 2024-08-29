@@ -11,18 +11,36 @@ font-family: Copyduck;}
   --off-white: #fefff6;
 }
 
+.phone-margin{
+      width: 50%;
+      height: 75%;
+      align: left;
+      background-position: 100% 100%;
+      /*border: 2px solid black;
+      box-sizing: border-box;*/
+      position: relative;
+      z-index: 70
+}
+
+.watch-margin{
+      position: absolute;
+      transform: rotate(90deg);
+      top: 70%;
+      left: 2.25%;
+      z-index: 70;
+}
 
 .book {
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: right;
   color: var(--off-white);
   width: 97%;
   height: 95%;
 }
 #cover {
-  width: 45%;
+  width: 20%;
   height: 95%;
   color: var(--off-white);
 }
@@ -42,7 +60,25 @@ font-family: Copyduck;}
   transform-style: preserve-3d;
   transform: rotateY(0deg);
   transition: .5s;
-  color: #050;
+  color: #000;
+}
+.shadow_img {
+  width: 20%;
+  height: 20%;
+  border-radius: 25px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.extra-padding {
+padding: 5%;
+}
+.img-text {
+  float: right;
+  padding: 0%;
+  /*
+  margin-left: 10%;
+  vertical-align: top;
+  add any additional margin if needed
+  */
 }
 .front {
   position: absolute;
@@ -50,7 +86,8 @@ font-family: Copyduck;}
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #def;
+  border-left: 10px solid black;
+  background-color: var(--off-white);
   box-sizing: border-box;
   padding: 0 0px;
 }
@@ -63,22 +100,27 @@ font-family: Copyduck;}
   z-index: 99;
   transform: rotateY(180deg);
   backface-visibility: hidden;
-  background-color: #000;
+  border-right: 10px solid black;
+  background-color: var(--off-white);
 }
 .next-btn {
   position: absolute;
   z-index: 50;
   bottom: 13px;
-  right: 13px;
+  right: 10px;
+  transform: rotate(-90deg);
+  font-size: 30px;
   cursor: pointer;
-  color: #000;
+  color: var(--emerald);
 }
 .back-btn {
   position: absolute;
   bottom: 13px;
-  right: 13px;
+  left: 10px;
+  transform: rotate(90deg);
+  font-size: 30px;
   cursor: pointer;
-  color: #fff;
+  color: var(--emerald);
 }
 #p1 {
   z-index: 3;
@@ -106,6 +148,15 @@ input[type="checkbox"] {
   transform: rotateY(-180deg);
   z-index: 50;
 }
+#c4:checked ~ .flip-book #p4 {
+  transform: rotateY(-180deg);
+  z-index: 60;
+}
+#c5:checked ~ .flip-book #p5 {
+  transform: rotateY(-180deg);
+  z-index: 70;
+}
+
 #cov1
 {
    position: absolute;
@@ -142,7 +193,21 @@ input[type="checkbox"] {
 #cov6
 {
     position: absolute;
-    top: 95%;
-    left: 2%;
+    top: 97%;
+    left: 1%;
+    z-index: 60;
+}
+#cov7
+{
+    position: absolute;
+    top: 65%;
+    left: 3.5%;
+    z-index: 60;
+}
+#cov8
+{
+    position: absolute;
+    top: 93%;
+    left: 7%;
     z-index: 60;
 }
