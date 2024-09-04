@@ -211,3 +211,41 @@ input[type="checkbox"] {
     left: 7%;
     z-index: 60;
 }
+.desktop {
+  display: block;
+}
+
+.mobile-portrait {
+  display: none;
+}
+
+.mobile-landscape {
+  display: none;
+}
+
+@media only screen and (max-width: 1300px), screen and (max-height: 600px) {
+    @media (orientation: portrait){
+        .desktop {
+            display: none;
+          }
+          .mobile-portrait {
+            display: block;
+          }
+
+          .mobile-landscape {
+            display: none;
+          }
+    }
+    @media (orientation: landscape){
+            .desktop {
+                display: none;
+              }
+              .mobile-portrait {
+                display: none;
+              }
+              .mobile-landscape {
+                display: block;
+              }
+        }
+
+}
