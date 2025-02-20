@@ -126,7 +126,28 @@ padding: 5%;
   border-right: 10px solid black;
   background-color: var(--off-white);
 }
+.back-portrait {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  backface-visibility: hidden;
+  border-top: 10px solid black;
+  background-color: var(--off-white);
+}
 .next-btn {
+  position: absolute;
+  z-index: 50;
+  bottom: 13px;
+  right: 10px;
+  transform: rotate(-90deg);
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--emerald);
+}
+.next-btn-portrait {
   position: absolute;
   z-index: 50;
   bottom: 13px;
@@ -145,6 +166,15 @@ padding: 5%;
   cursor: pointer;
   color: var(--emerald);
 }
+.back-btn-portrait {
+  position: absolute;
+  bottom: 13px;
+  left: 10px;
+  transform: rotate(90deg);
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--emerald);
+}
 #p1 {
   z-index: 3;
 }
@@ -152,6 +182,15 @@ padding: 5%;
   z-index: 2;
 }
 #p3 {
+  z-index: 1;
+}
+#mlp1 {
+  z-index: 3;
+}
+#mlp2 {
+  z-index: 2;
+}
+#mlp3 {
   z-index: 1;
 }
 
@@ -177,6 +216,22 @@ input[type="checkbox"] {
 }
 #c5:checked ~ .flip-book #p5 {
   transform: rotateY(-180deg);
+  z-index: 70;
+}
+
+#mlc1:checked ~ .flip-book-portrait #mlp1 {
+  z-index: 30;
+}
+#mlc2:checked ~ .flip-book-portrait #mlp2 {
+  z-index: 40;
+}
+#mlc3:checked ~ .flip-book-portrait #mlp3 {
+  z-index: 50;
+}
+#mlc4:checked ~ .flip-book-portrait #mlp4 {
+  z-index: 60;
+}
+#mlc5:checked ~ .flip-book-portrait #mlp5 {
   z-index: 70;
 }
 
