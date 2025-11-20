@@ -141,40 +141,52 @@ padding: 5%;
 .next-btn {
   position: absolute;
   z-index: 50;
-  bottom: 13px;
+  bottom: 0px;
   right: 10px;
-  transform: rotate(-90deg);
-  font-size: 30px;
+  /*transform: rotate(-90deg);*/
+  font-size: 25px;
   cursor: pointer;
-  color: var(--emerald);
+  border-style: inset;
+  border-color: red;
+  border-width: 5px;
+  color: black;
 }
 .next-btn-portrait {
   position: absolute;
   z-index: 50;
-  bottom: 13px;
+  bottom: 0px;
   right: 10px;
-  transform: rotate(-90deg);
-  font-size: 30px;
+  /*transform: rotate(-90deg);*/
+  font-size: 25px;
   cursor: pointer;
-  color: var(--emerald);
+  border-style: inset;
+  border-color: red;
+  border-width: 5px;
+  color: black;
 }
 .back-btn {
   position: absolute;
-  bottom: 13px;
+  bottom: 0px;
   left: 10px;
-  transform: rotate(90deg);
-  font-size: 30px;
+  /*transform: rotate(90deg);*/
+  font-size: 25px;
   cursor: pointer;
-  color: var(--emerald);
+  border-style: inset;
+  border-color: red;
+  border-width: 5px;
+  color: black;
 }
 .back-btn-portrait {
   position: absolute;
-  bottom: 13px;
+  bottom: 0px;
   left: 10px;
-  transform: rotate(90deg);
-  font-size: 30px;
+  /*transform: rotate(90deg);*/
+  font-size: 25px;
   cursor: pointer;
-  color: var(--emerald);
+  border-style: inset;
+  border-color: red;
+  border-width: 5px;
+  color: black;
 }
 #p1 {
   z-index: 3;
