@@ -45,7 +45,11 @@ font-family: Copyduck;}
   height: 95%;
 }
 #cover {
+<<<<<<<< HEAD:V1/styles.css
   width: 20%;
+========
+  width: 45%;
+>>>>>>>> origin/main:image_assets/styles.css
   height: 95%;
   color: var(--off-white);
 }
@@ -86,8 +90,14 @@ padding: 5%;
 .img-text {
   float: right;
   padding: 0%;
+<<<<<<<< HEAD:V1/styles.css
   /*
   margin-left: 10%;
+========
+  margin-right: 15%;
+  /*
+
+>>>>>>>> origin/main:image_assets/styles.css
   vertical-align: top;
   add any additional margin if needed
   */
@@ -104,7 +114,11 @@ padding: 5%;
   padding: 0 0px;
 }
 .front-portrait {
+<<<<<<<< HEAD:V1/styles.css
   position: absolute;
+========
+  position: relative;
+>>>>>>>> origin/main:image_assets/styles.css
   width: 100%;
   height: 100%;
   top: 0;
@@ -127,12 +141,20 @@ padding: 5%;
   background-color: var(--off-white);
 }
 .back-portrait {
+<<<<<<<< HEAD:V1/styles.css
   position: absolute;
+========
+  position: relative;
+>>>>>>>> origin/main:image_assets/styles.css
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+<<<<<<<< HEAD:V1/styles.css
   z-index: 99;
+========
+  z-index: 0;
+>>>>>>>> origin/main:image_assets/styles.css
   backface-visibility: hidden;
   border-top: 10px solid black;
   background-color: var(--off-white);
@@ -140,16 +162,29 @@ padding: 5%;
 .next-btn {
   position: absolute;
   z-index: 50;
+<<<<<<<< HEAD:V1/styles.css
   bottom: 13px;
   right: 10px;
   transform: rotate(-90deg);
   font-size: 30px;
   cursor: pointer;
   color: var(--emerald);
+========
+  bottom: 0px;
+  right: 10px;
+  /*transform: rotate(-90deg);*/
+  font-size: 25px;
+  cursor: pointer;
+  border-style: inset;
+  border-color: red;
+  border-width: 5px;
+  color: black;
+>>>>>>>> origin/main:image_assets/styles.css
 }
 .next-btn-portrait {
   position: absolute;
   z-index: 50;
+<<<<<<<< HEAD:V1/styles.css
   bottom: 13px;
   right: 10px;
   transform: rotate(-90deg);
@@ -174,6 +209,41 @@ padding: 5%;
   font-size: 30px;
   cursor: pointer;
   color: var(--emerald);
+========
+  bottom: 0px;
+  right: 10px;
+  /*transform: rotate(-90deg);*/
+  font-size: 25px;
+  cursor: pointer;
+  border-style: inset;
+  border-color: red;
+  border-width: 5px;
+  color: black;
+}
+.back-btn {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  /*transform: rotate(90deg);*/
+  font-size: 25px;
+  cursor: pointer;
+  border-style: inset;
+  border-color: red;
+  border-width: 5px;
+  color: black;
+}
+.back-btn-portrait {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  /*transform: rotate(90deg);*/
+  font-size: 25px;
+  cursor: pointer;
+  border-style: inset;
+  border-color: red;
+  border-width: 5px;
+  color: black;
+>>>>>>>> origin/main:image_assets/styles.css
 }
 #p1 {
   z-index: 3;
@@ -316,13 +386,21 @@ input[type="checkbox"] {
     }
     @media (orientation: landscape){
             .desktop {
+<<<<<<<< HEAD:V1/styles.css
                 display: none;
+========
+                display: block;
+>>>>>>>> origin/main:image_assets/styles.css
               }
               .mobile-portrait {
                 display: none;
               }
               .mobile-landscape {
+<<<<<<<< HEAD:V1/styles.css
                 display: block;
+========
+                display: none;
+>>>>>>>> origin/main:image_assets/styles.css
               }
         }
 
