@@ -1,0 +1,308 @@
+@font-face {
+ src: url(LTSaeada_Medium.otf);
+ font-family: lts_med;
+}
+
+body {
+font-family: lts_med;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fefcf9;
+}
+
+ul.nav li {
+  float: right;
+}
+
+ul.nav li.left {
+  float: left;
+}
+
+ul.nav li.left img{
+  float: none;        /* remove float */
+    margin: 0;          /* remove top/bottom margins */
+    padding: 0;
+  width: auto;        /* or whatever size you want */
+    height: 16px;       /* keep aspect ratio */
+    display: block;
+
+
+}
+
+ul.nav li a {
+  display: flex;
+  color: black;
+  text-align: center;
+
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.nav li a:hover {
+  background-color: #f1f6fd;
+}
+
+/*
+Source - https://stackoverflow.com/a
+Posted by Temani Afif, modified by community. See post 'Timeline' for change history
+Retrieved 2026-01-05, License - CC BY-SA 4.0
+*/
+
+.box {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+.box:before,
+.box:after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:100%;
+  background: #fefcf9;
+}
+.box:after {
+  -webkit-mask:
+    radial-gradient(100% 80% at top   ,white 79.5%,transparent 80%) left,
+    radial-gradient(100% 80% at bottom,transparent 79.5%,white 80%) right;
+  mask:
+    radial-gradient(100% 80% at top   ,white 79.5%,transparent 80%) left,
+    radial-gradient(100% 80% at bottom,transparent 79.5%,white 80%) right;
+  -webkit-mask-size:50.1% 100%;
+  -webkit-mask-repeat:no-repeat;
+  mask-size:100% 100%;
+  mask-repeat:no-repeat;
+  background:#e7ecf9;
+}
+
+.sideimg{
+width: 40%;
+    /* Optional: Center the element horizontally */
+float: right;
+    /* Optional: Some styling for visibility */
+margin-right: 0px;
+padding-left: 0px;
+margin-top: 20px;
+padding-bottom: 0px;
+border-radius: 50px;
+/*background: #444f8c;*/
+box-sizing: border-box; /* Ensures padding doesn't add to the 50% width */
+}
+
+.sidetext{
+width: 60%;/* Optional: Center the element horizontally */
+height: 50vh;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;     /* horizontal centering */
+justify-content: center; /* vertical centering (optional) */
+/*background: #fab862; Ensures padding doesn't add to the 50% width */
+}
+
+.headone{
+color: #444f8c;
+margin-top: 20px;
+display: flex;
+align-items: center;     /* horizontal centering */
+justify-content: center;
+}
+
+.headthree{
+color: #444f8c;
+display: flex;
+margin-top: 20px;
+align-items: center;     /* horizontal centering */
+justify-content: center;
+}
+
+.buttonlm{
+background-color: #5e72b8;
+color: #ffffff;
+padding-right: 20px;
+padding-left: 20px;
+padding-top: 8px;
+font-family: lts_med;
+border-radius: 20px;
+padding-bottom: 8px;
+cursor: pointer;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+.buttongs{
+background-color: #d3e2fb;
+color: #5672b0;
+padding-right: 20px;
+padding-left: 20px;
+padding-top: 8px;
+font-family: lts_med;
+border-radius: 20px;
+padding-bottom: 8px;
+cursor: pointer;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+.button_spacing{
+padding-right: 20px;
+padding-left: 20px;
+}
+
+.container hr {
+    width: 100%;       /* make it stretch across the container */
+        border: none;      /* optional, remove default borders */
+        border-top: 3px solid #ccc; /* visible line */
+        margin: 10px 0;    /* spacing */
+}
+
+.onecolumn{
+clear:both;
+height: 100%;
+}
+
+.side-wrapper {
+ flex: 1;                 /* right side */
+   display: flex;
+
+   border: none;           /* Removes default button border */
+       border-radius: 16px;     /* Rounded corners */
+       background-color:#feecd3; /* Default background color */
+   margin:50px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   justify-content: center; /* center horizontally in right column */
+   align-items:center;     /* center vertically relative to sidetext */
+}
+
+.sideimgtwo {
+  width: 15vw;
+  height: auto;
+}
+
+.side-layout {
+  display: flex;
+  width: 100%;
+}
+
+
+
+
+
+
+.container{
+ display: flex;
+ flex-direction: column; /* Stacks image and text vertically */
+    padding: 15px;          /* Space inside the button */
+    border: none;           /* Removes default button border */
+    border-radius: 8px;     /* Rounded corners */
+    cursor: pointer;        /* Changes cursor to a hand on hover */
+    background-color:#e7ecf9; /* Default background color */
+
+    /* Typography */
+    font-size: 16px;
+    color: #5672b0;
+    text-align: center;
+    align-items: center;
+}
+
+.productbutton{
+ display: flex;
+ flex-direction: row; /* Stacks image and text vertically */
+    padding: 15px;          /* Space inside the button */
+    border: none;           /* Removes default button border */
+    border-radius: 8px;     /* Rounded corners */
+    cursor: pointer;        /* Changes cursor to a hand on hover */
+    background-color:#A2BFFE; /* Default background color */
+
+    /* Typography */
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.icon-button {
+    /* Layout properties */
+    display: inline-block;
+    width:30%;
+    height: 100%;
+    margin-top:30px;
+    margin-left:20px;
+    margin-right:20px;
+    padding: 5px;          /* Space inside the button */
+    border: none;           /* Removes default button border */
+    border-radius: 8px;     /* Rounded corners */
+    cursor: pointer;        /* Changes cursor to a hand on hover */
+    background-color: #e7ecf9; /* Default background color */
+
+    /* Typography */
+    font-size: 16px;
+    font-family: lts_med;
+    color: white;
+    text-align: center;
+
+    /* The "raised" effect (box-shadow) */
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1);
+
+    /* Transition for smooth hover/active effects */
+    transition: all 0.3s ease;
+}
+
+.icon-button img {
+    /* Space between the image and the text */
+    margin-bottom: 8px;
+    /* Set image size */
+    width: 30%;
+    height: 30%;
+}
+
+/* Hover and Active (pressed) states */
+.icon-button:hover {
+    background-color: #e0e0e0;
+    /* Slightly higher shadow on hover */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); /* Moves up slightly */
+}
+
+.icon-button:active {
+    background-color: #d0d0d0;
+    /* Flatter shadow when pressed */
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.06);
+    transform: translateY(1px); /* Moves down slightly to simulate being pressed */
+}
+
+.input-fields{
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color:#5e72b8;
+
+    /* Typography */
+    font-size: 16px;
+    color: white;
+    font-family: lts_med;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.input-organizer{
+width:70%;
+  margin: 0 auto;
+  justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.7; /* Firefox */
+}
